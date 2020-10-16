@@ -52,7 +52,7 @@
           p.fname = fname;
           p.lname = lname;
           p.height = getQuantityValueAndUnit(height[0]);
-
+          p.weight = getQuantityValueAndUnit(weight[0]);
           if (typeof systolicbp != 'undefined')  {
             p.systolicbp = systolicbp;
           }
@@ -115,7 +115,7 @@
         typeof ob.valueQuantity.value != 'undefined' &&
         typeof ob.valueQuantity.unit != 'undefined') {
           return ob.valueQuantity.value + ' ' + ob.valueQuantity.unit;
-    } else {
+    } else w
       return undefined;
     }
   }
@@ -128,7 +128,7 @@
     $('#lname').html(p.lname);
     $('#gender').html(p.gender);
     $('#birthdate').html(p.birthdate);
-    $('#weight').html(p.height);
+    $('#weight').html(p.weight);
     $('#height').html(p.height);
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
