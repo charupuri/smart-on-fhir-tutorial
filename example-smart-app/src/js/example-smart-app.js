@@ -75,7 +75,7 @@
 
   function defaultPatient(){
     return {
-      identi: {value: ''};
+      identi: {value: ''},
       fname: {value: ''},
       lname: {value: ''},
       gender: {value: ''},
