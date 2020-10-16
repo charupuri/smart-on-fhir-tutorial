@@ -75,6 +75,7 @@
 
   function defaultPatient(){
     return {
+      identi: {value: ''};
       fname: {value: ''},
       lname: {value: ''},
       gender: {value: ''},
@@ -118,6 +119,7 @@
   window.drawVisualization = function(p) {
     $('#holder').show();
     $('#loading').hide();
+    $('#identi').html(p.identi);
     $('#fname').html(p.fname);
     $('#lname').html(p.lname);
     $('#gender').html(p.gender);
