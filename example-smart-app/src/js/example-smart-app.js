@@ -43,7 +43,8 @@
           var ldl = byCodes('2089-1');
 
           var p = defaultPatient();
-          p.identifier.value = identi;
+          console.log(p,"myapatient");
+          p.identi = identi;
           p.birthdate = patient.birthDate;
           p.gender = gender;
           p.fname = fname;
