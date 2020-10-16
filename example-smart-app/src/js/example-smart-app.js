@@ -28,7 +28,7 @@
         $.when(pt, obv).done(function(patient, obv) {
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
-          var identi = patient.identifier[0].value; console.log(identi,"hohoval");
+          var identi = patient.identifier[0].value; 
           var fname = '';
           var lname = '';
 
@@ -52,7 +52,7 @@
           p.fname = fname;
           p.lname = lname;
           p.height = getQuantityValueAndUnit(height[0]);
-          p.weight = getQuantityValueAndUnit(weight[0]);
+          p.weight = getQuantityValueAndUnit(weight[0]);console.log(weight,"wt");
           if (typeof systolicbp != 'undefined')  {
             p.systolicbp = systolicbp;
           }
